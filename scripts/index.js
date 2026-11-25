@@ -97,3 +97,8 @@ settingsBtn.addEventListener("click", () => {
   settings.classList.toggle("hide");
 });
 
+settingsForm.addEventListener("change", () => {
+  difficulty = difficultySelect.value;
+  text.focus();
+});
+
