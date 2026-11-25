@@ -65,3 +65,6 @@ function updateTime() {
   }
 }
 
+function gameOver() {
+  text.disabled = true;
+
