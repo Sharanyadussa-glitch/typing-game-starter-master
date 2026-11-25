@@ -54,3 +54,8 @@ function updateScore() {
   score += 1;
   scoreEl.textContent = score;
 }
+
+function updateTime() {
+  time -= 1;
+  timeEl.textContent = `${time}s`;
+
