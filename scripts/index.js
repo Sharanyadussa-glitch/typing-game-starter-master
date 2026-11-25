@@ -74,3 +74,7 @@ function gameOver() {
   const finalScore = document.createElement("p");
   finalScore.textContent = `Final score: ${score}`;
 
+  const restartButton = document.createElement("button");
+  restartButton.textContent = "Play again";
+  restartButton.addEventListener("click", () => location.reload());
+
