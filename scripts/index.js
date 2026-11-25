@@ -49,3 +49,8 @@ function addWordToDOM() {
   randomWord = words[index];
   word.textContent = randomWord;
 }
+
+function updateScore() {
+  score += 1;
+  scoreEl.textContent = score;
+}
