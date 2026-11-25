@@ -83,3 +83,13 @@ function gameOver() {
   restartButton.focus();
 }
 
+text.addEventListener("input", () => {
+  if (time === 0 || text.value !== randomWord) return;
+
+  updateScore();
+  addWordToDOM();
+  time += timeBonus[difficulty];
+  timeEl.textContent = `${time}s`;
+  text.value = "";
+});
+
