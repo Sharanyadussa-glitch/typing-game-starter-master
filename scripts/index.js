@@ -44,3 +44,8 @@ let time = 10;
 const timeBonus = { easy: 5, medium: 3, hard: 2 };
 let difficulty = difficultySelect.value;
 
+function addWordToDOM() {
+  const index = Math.floor(Math.random() * words.length);
+  randomWord = words[index];
+  word.textContent = randomWord;
+}
