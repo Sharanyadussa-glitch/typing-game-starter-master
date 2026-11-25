@@ -71,3 +71,6 @@ function gameOver() {
   const heading = document.createElement("h1");
   heading.textContent = "Time's up!";
 
+  const finalScore = document.createElement("p");
+  finalScore.textContent = `Final score: ${score}`;
+
