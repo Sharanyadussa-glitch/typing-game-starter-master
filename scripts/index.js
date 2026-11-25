@@ -78,3 +78,8 @@ function gameOver() {
   restartButton.textContent = "Play again";
   restartButton.addEventListener("click", () => location.reload());
 
+  endgameEl.append(heading, finalScore, restartButton);
+  endgameEl.style.display = "flex";
+  restartButton.focus();
+}
+
