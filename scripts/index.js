@@ -68,3 +68,6 @@ function updateTime() {
 function gameOver() {
   text.disabled = true;
 
+  const heading = document.createElement("h1");
+  heading.textContent = "Time's up!";
+
