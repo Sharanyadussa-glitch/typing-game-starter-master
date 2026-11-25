@@ -59,3 +59,9 @@ function updateTime() {
   time -= 1;
   timeEl.textContent = `${time}s`;
 
+  if (time === 0) {
+    clearInterval(timer);
+    gameOver();
+  }
+}
+
