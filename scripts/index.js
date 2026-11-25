@@ -102,3 +102,6 @@ settingsForm.addEventListener("change", () => {
   text.focus();
 });
 
+addWordToDOM();
+text.focus();
+const timer = setInterval(updateTime, 1000);
